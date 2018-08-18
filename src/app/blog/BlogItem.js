@@ -18,7 +18,14 @@ const BlogItem = (props) => (
         </div>
         <div className="level">
           <div className="level-left">
-            <Link className="level-item button is-small is-link is-outlined" to={props.path}>Read More</Link>
+          <Link className="level-item button is-small is-link is-outlined"
+            to={{
+              pathname: `/blog/${props.path}`,
+              state: { props }
+            }}
+          >
+            Read More
+          </Link>
           </div>
         <div className="level-right">
           <p className="level-item has-text-link is-size-7">
