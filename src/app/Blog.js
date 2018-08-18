@@ -1,5 +1,8 @@
 import React from 'react'
 import * as contentful from 'contentful'
+
+import BlogItem from './blog/BlogItem'
+import PageHeader from './components/PageHeader'
 class Blog extends React.Component {
   state = {
     posts: []
@@ -17,17 +20,19 @@ class Blog extends React.Component {
       posts: response.items
     })
   }
-  
-  render() {
-    return (
-      <div>
-        <p>This is the Blog Page</p>
-        <br/>
-        { this.state.posts.map(({fields}, i) =>
-          <pre key={i}>{JSON.stringify(fields, null, 2)}</pre>
-        )}
-      </div>
-    )
-  }
+
+    render() {
+        return (
+            <div>
+            <PageHeader color="is-info" title="Code Blog">
+                Your standard <strong>JavaScript</strong> programming blog, albeit, probably not very good, but I will at least try to keep it entertaining. This blog is a chronological mix of random posts on Angular, React, Functional Programming, and my <strong>project walkthroughs</strong>.
+            </PageHeader>
+            <br/>
+            { this.state.posts.map(({fields}, i) =>
+                <BlogItem key={i} {...fields} />
+            )}
+            </div>
+        )
+    }
 }
 export default Blog
