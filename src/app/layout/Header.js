@@ -38,7 +38,7 @@ class Header extends React.Component {
               width="30px" 
               alt="" 
             />
-            <span>AaronKlaser.com</span>
+            <span>AayushDutt.com</span>
           </NavLink>
           <button className="button navbar-burger" onClick={this.toggleNav}>
             <span></span>

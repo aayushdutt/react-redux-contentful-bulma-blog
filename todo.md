@@ -1,0 +1,1 @@
+1. move redux-immutable-state-invariant as dev-dependency
