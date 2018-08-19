@@ -26,19 +26,8 @@ class Header extends React.Component {
             to="/"
             activeClassName="is-active"
           >
-            <img 
-              style={{
-                borderTopLeftRadius: '50%',
-                borderTopRightRadius: '50%',
-                borderBottomLeftRadius: '50%',
-                borderBottomRightRadius: '50%',
-                marginRight: 15
-              }}
-              src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAU3AAAAJGE1MzYxNzYzLTE1NTUtNDEyYi04MzRjLTgzZjNkOGU0MGIzNg.jpg"
-              width="30px" 
-              alt="" 
-            />
-            <span>AayushDutt.com</span>
+            <i className="fab fa-lg fa-connectdevelop" style={{marginRight: "10px"}}></i>
+            <span>AayushDutt</span>
           </NavLink>
           <button className="button navbar-burger" onClick={this.toggleNav}>
             <span></span>
@@ -58,12 +47,6 @@ class Header extends React.Component {
               </span>
               Code Blog
             </NavLink>
-            <a className="navbar-item">
-              <span className="icon" style={{ marginRight: 5 }}>
-                <i className="fab fa-lg fa-medium"></i>
-              </span>
-              Medium
-            </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link" >
                 Projects
@@ -83,7 +66,7 @@ class Header extends React.Component {
             </div>
           </div>
           <div className="navbar-end">
-            <a className="navbar-item" href="https://github.com/AayushDutt">
+            <a className="navbar-item" href="https://github.com/aayushdutt">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>
               </span>
