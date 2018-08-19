@@ -3,7 +3,7 @@
 */
 import * as types from './types'
 
-export function loadBlogSuccess(post) {
-  const action =  { type: types.LOAD_BLOG_SUCCESS, post};
+export function loadBlogSuccess(posts) {
+  const action =  { type: types.LOAD_BLOG_SUCCESS, posts};
   return action;
 }
