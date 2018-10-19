@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+#keys
+keys.dev.js
+
 #css
 src/**/*.css
 
@@ -13,6 +16,7 @@ src/**/*.css
 /build
 
 # misc
+.env
 .DS_Store
 .env.local
 .env.development.local
